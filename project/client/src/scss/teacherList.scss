@@ -1,0 +1,162 @@
+$borderColor: #c0c0c0; // Define the border color variable
+
+.teacherList {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #eeeeee;
+
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    .sections {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      background-color: white;
+
+      .search-section {
+        display: flex;
+        align-items: center;
+
+        .search-bar {
+          padding: 8px;
+          border: 1px solid $borderColor; // Use the variable for border color
+          border-radius: 4px;
+          margin-right: 10px;
+          width: 300px;
+
+          &:focus {
+            outline: none; // Prevent the default focus outline
+          }
+        }
+
+        .search-options {
+          padding: 8px;
+          border: 1px solid $borderColor; // Use the variable for border color
+          border-radius: 4px;
+        }
+      }
+
+      .sort-section {
+        .sort-options {
+          padding: 8px;
+          border: 1px solid $borderColor; // Use the variable for border color
+          border-radius: 4px;
+        }
+      }
+    }
+
+    .data-table {
+      width: 100%;
+      margin-bottom: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      border: 1px solid $borderColor; // Use the variable for border color
+
+      .col-userName {
+        width: 8%;
+      }
+
+      .col-rollNo {
+        width: 5%;
+        text-align: center;
+      }
+
+      .col-department {
+        width: 5%;
+      }
+
+      .col-semester {
+        width: 3%;
+        text-align: center;
+      }
+
+      .col-email {
+        width: 20%;
+      }
+
+      .col-password {
+        width: 15%;
+      }
+
+      .col-registeredAt {
+        width: 10%;
+        text-align: center;
+      }
+
+      thead {
+        border: 1px solid $borderColor; // Use the variable for border color
+      }
+
+      tr:nth-child(even) {
+        background-color: rgb(
+          238,
+          238,
+          238
+        ); // Transparent background for even rows
+      }
+
+      tr:nth-child(odd) {
+        background-color: transparent; // Colored background for odd rows
+      }
+
+      .dataRow:hover {
+        background-color: rgb(202, 202, 202);
+      }
+
+      th {
+        font-size: 18px;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-left: 1px solid $borderColor;
+      }
+    }
+  }
+
+  .pagination {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+
+    .pagination-button,
+    .pagination-icon-button {
+      padding: 5px 10px;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      border: 1px solid $borderColor; // Use the variable for border color
+
+      &:hover {
+        background-color: #333;
+        color: #fff;
+      }
+
+      &.active {
+        background-color: #333;
+        color: #fff;
+      }
+    }
+
+    .pagination-icon-button {
+      background-color: #f0f0f0;
+      color: #333;
+      border: none;
+      padding: 5px 10px;
+    }
+  }
+}

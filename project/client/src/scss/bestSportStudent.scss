@@ -1,0 +1,81 @@
+.adminBestSportStudent {
+
+    .top-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .left-section {
+            display: flex;
+            align-items: center;
+
+            .heading {
+                font-weight: bold;
+                margin-right: 10px;
+                font-size: 25px;
+            }
+        }
+
+        .right-section {
+            display: flex;
+            align-items: center;
+        }
+
+
+    }
+
+    .bottom-section {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        height: 300px;
+        overflow: auto;
+
+        .left-section {
+            display: flex;
+            align-items: center;
+
+            .heading {
+                font-weight: bold;
+                margin-right: 10px;
+                font-size: 25px;
+            }
+        }
+
+    }
+
+    .studentContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+    .studentData {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .student-name {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .student-department {
+        color: #777;
+    }
+
+    .edit-icon {
+        font-size: 20px;
+        color: #5c72d3;
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 8px;
+    }
+
+    .edit-icon-circle {
+        border: 1px solid #ccc;
+    }
+}

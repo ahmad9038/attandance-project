@@ -1,0 +1,120 @@
+.adminDashboard {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    h2 {
+        margin-bottom: 10px;
+        font-size: 25px;
+
+        span {
+            color: #4D72D3;
+            font-weight: bold;
+        }
+    }
+
+    .dataSection {
+        width: 100%;
+        height: 100%;
+
+        .dashboard-sections {
+            display: flex;
+            height: 100%;
+
+            .section {
+                width: 100%;
+                display: flex;
+
+
+                .section-left {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 2.5;
+
+                    .section-top {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 20%;
+                        margin: 10px;
+                        gap: 20px;
+
+                        .box {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 20px;
+                            padding: 30px;
+                            background-color: white;
+
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .content {
+                                display: flex;
+                                flex-direction: column;
+
+                                h3 {
+                                    margin: 0;
+                                    font-size: 20px;
+
+                                }
+
+                                .box-number {
+                                    font-weight: bold;
+                                    font-size: 35px;
+                                }
+                            }
+
+                            .icon {
+                                display: flex;
+                                align-items: center;
+                                background-color: #5c72d3; // Blue color
+                                border-radius: 10%;
+
+                                .box-icon {
+                                    font-size: 90px;
+                                    color: white;
+                                    padding: 15px;
+                                }
+                            }
+
+                        }
+                    }
+
+                    .section-bottom {
+                        height: 100%;
+                        background-color: white;
+                        border-radius: 20px;
+                        padding: 20px;
+                        margin: 10px;
+                    }
+
+
+                }
+
+                .section-right {
+                    flex: 1;
+                    border-radius: 20px;
+
+                    .boxContainer {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+
+                        .box {
+                            padding: 30px;
+                            margin-bottom: 10px;
+                            background-color: #fff;
+                            height: 100%;
+                            margin: 10px;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

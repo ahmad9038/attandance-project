@@ -1,0 +1,96 @@
+$borderColor: #c0c0c0;
+
+.edit-class-modal {
+  div {
+    span {
+      background-color: grey;
+      color: white;
+    }
+  }
+
+  display: flex;
+  .modal-body {
+    display: flex;
+    gap: 20px;
+
+    .left-section {
+      flex: 1;
+      overflow: auto;
+      input {
+        margin-bottom: 10px;
+        border: 1px solid $borderColor;
+        padding: 8px;
+        width: 100%;
+        border-radius: 5px;
+      }
+      input:focus {
+        outline: none;
+      }
+
+      .student-list {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10px;
+          padding: 5px;
+          background-color: #f0f0f0;
+          border-radius: 5px;
+          padding: 10px;
+          button {
+            background-color: #3182ce;
+            color: white;
+            padding: 5px;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+    .right-section {
+      flex: 1;
+      .topInput {
+        margin-bottom: 10px;
+        border: 1px solid $borderColor;
+        padding: 8px;
+        width: 100%;
+        border-radius: 5px;
+      }
+      .topInput:focus {
+        outline: none;
+      }
+      .selected-students {
+        list-style-type: none;
+        padding: 0;
+        max-height: 300px; /* Set a maximum height and add overflow: auto here */
+        overflow: auto;
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10px;
+          padding: 5px;
+          background-color: #f0f0f0;
+          border-radius: 5px;
+          padding: 10px;
+          button {
+            background-color: #3182ce;
+            color: white;
+            padding: 5px;
+            border-radius: 4px;
+          }
+        }
+      }
+      .selected-count {
+        margin: 10px 0;
+      }
+      .timetable-inputs {
+        input {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

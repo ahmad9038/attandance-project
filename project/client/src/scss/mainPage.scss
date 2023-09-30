@@ -1,0 +1,12 @@
+.mainPage {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #eeeeee;
+
+    .main-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+}

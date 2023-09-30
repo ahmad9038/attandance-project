@@ -1,0 +1,139 @@
+$borderColor: #c0c0c0;
+
+.attendance {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #eeeeee;
+
+  .mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    .custom-navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      .left {
+        display: flex;
+        align-items: center;
+
+        .class-count {
+          margin-right: 20px;
+
+          span {
+            border: 1px solid #ccc;
+            margin-right: 10px;
+            padding: 6px;
+            border-radius: 5px;
+          }
+        }
+        .search-bar {
+          margin-right: 10px;
+          input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+          }
+        }
+      }
+      .add-class-button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        button {
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 5px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          svg {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    .class-list {
+      overflow: auto;
+      margin-bottom: 20px;
+      table {
+        width: 100%;
+        border-collapse: collapse;
+
+        tbody {
+          tr {
+            button {
+              margin-right: 20px;
+              font-size: 20px;
+            }
+          }
+        }
+
+        th,
+        td {
+          border: 1px solid #ccc;
+          padding: 8px;
+          text-align: center;
+
+          button {
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            color: white;
+            width: 100%;
+
+            &.present {
+              background-color: #0ebb00;
+            }
+
+            &.absent {
+              background-color: #ff2f2d;
+            }
+
+            &.leave {
+              background-color: #f7a913;
+            }
+
+            &:hover {
+              filter: brightness(1.2);
+            }
+          }
+        }
+        th {
+          background-color: #f2f2f2;
+          font-weight: bold;
+        }
+        tr:hover {
+          box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3);
+        }
+        .edit-button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          svg {
+            color: #007bff;
+          }
+        }
+      }
+    }
+  }
+}
